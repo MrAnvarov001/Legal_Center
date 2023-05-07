@@ -1,0 +1,227 @@
+@import './varible';
+
+.tarif{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5em 0 1.6em;
+    @media (max-width:450px) {
+        font-size: 0.8rem;
+    }
+    @media (max-width:350px) {
+        font-size: 0.7rem;
+    }
+    h1{
+        font-size: 1.6em;
+        font-weight: 700;
+        color: $textcolor;
+    }
+    h2{
+        font-size: 0.7em;
+        font-weight: 400;
+        color: $textcolor1;
+        padding: 0.8em 0 1.6em;
+    }
+    label{
+        padding: 0.5em 1.4em;
+        border-radius: 0.75em;
+
+       h1{
+        font-size: 1em;
+        font-weight: 400;
+        color: $blue;
+        border-bottom: 2px dotted $blue;
+        background-color: transparent;
+       }
+    }
+    form{
+        display: flex;
+        gap: 2em;
+        input{
+            display: none;
+        }
+        input:checked + label{
+            background-color: $blue;
+            h1{
+                color: $vrwhite;
+            }
+        }
+    }
+}
+
+.free{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8em;
+    background-color: $vrwhite;
+    border-radius: 20px;
+    padding: 2.4em;
+    text-align: center;
+    width: 51.6em;
+    max-width: 100%;
+    margin: 0 auto;
+    @media (max-width:1146px) {
+        width: 25em;
+    }
+    @media (max-width:450px) {
+        font-size: 0.8rem;
+    }
+    @media (max-width:350px) {
+        font-size: 0.7rem;
+    }
+    h1{
+        font-size: 0.8em;
+        font-weight: 700;
+        color: $blue1;
+        text-transform: uppercase;
+        letter-spacing: 2.4px;
+    }
+    h2{
+        font-size: 1.6em;
+        font-weight: 400;
+        color: $lightgray;
+    }
+    h3{
+        font-size: 0.7em;
+        font-weight: 400;
+        color: $bordercolor;
+    }
+    h4{
+        font-size: 0.8em;
+        font-weight: 400;
+        color: $textcolor1;
+    }
+
+    .royxat{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1em;
+        ul{
+            width: 16em;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            li{
+                display: flex;
+                gap: 8px;
+            }
+        }
+    }
+
+    a{
+        display: flex;
+        gap: 0.8em;
+        color: $blue1;
+        h4{
+            color: $blue1;
+        }
+    }
+}
+
+.premium{
+    margin-top: 1.6em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6em;
+    justify-content: center;
+    margin-bottom: 7em;
+    @media (max-width:450px) {
+        font-size: 0.8rem;
+    }
+    @media (max-width:350px) {
+        font-size: 0.7rem;
+    }
+    .card{
+        width: 25em;
+        max-width: 100%;
+        background-color: $vrwhite;
+        border-radius: 1em;
+        padding: 2.4em;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8em;
+        @media (max-width:1146px) {
+            text-align: center;
+        }
+        h1{
+            font-size: 0.8em;
+            font-weight: 700;
+            color: $blue1;
+            text-transform: uppercase;
+            letter-spacing: 2.4px;
+        }
+        h2{
+            font-size: 0.7em;
+            font-weight: 400;
+            color: $bordercolor;
+        }
+        h3{
+            font-size: 0.8em;
+            font-weight: 700;
+            color: $textcolor1;
+        }
+        h4{
+            font-size: 0.8em;
+            font-weight: 400;
+            color: $textcolor1;
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 0.8em;
+            li{
+                display: flex;
+                gap: 0.5em;
+            }
+        }
+
+        a{
+            display: flex;
+            gap: 0.8em;
+            color: $blue1;
+            h4{
+                color: $blue1;
+            }
+        }
+    }
+}
+
+.globus{
+    background: $blue url(../media/blue_img.svg);
+    background-size: cover;
+    color: $vrwhite;
+    background-position: center;
+    padding: 4.5em 0 10em;
+    @media (max-width:800px) {
+        font-size: 0.7rem;
+        padding: 3.5em 0 7em;
+    }
+    @media (max-width:400px) {
+        font-size: 0.6rem;
+    }
+    .cnt{
+        display: flex;
+        flex-direction: column;
+        gap: 0.8em;
+        @media (max-width:400px) {
+            text-align: center;
+            align-items: center;
+            
+        }
+        h1{
+            font-size: 1.6em;
+            font-weight: 700;
+        }
+        h2{
+            font-size: 0.8em;
+            font-weight: 400;
+            width: 20em;
+            max-width: 100%;
+
+        }
+    }
+}

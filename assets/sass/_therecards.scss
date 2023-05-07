@@ -1,0 +1,226 @@
+@import './varible';
+
+.there_cards{
+    margin-bottom: 7em;
+    h1{
+        font-size: 0.8em;
+        font-weight: 700;
+        color: $textcolor;
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+}
+
+.cards{
+    display: flex;
+    gap: 0.8em;
+    justify-content: space-between;
+    @media (max-width:1000px) {
+        font-size: 0.8rem;
+    }
+    @media (max-width:800px) {
+        font-size: 0.7rem;
+    }
+    @media (max-width:700px) {
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        gap: 0.8em;
+        width: 17.5em;
+        max-width: 100%;
+        padding: 1.6em;
+        background-color: $vrwhite;
+        border-radius: 10px;
+        @media (max-width:650px) {
+            text-align: center;
+        }
+        img{
+            width: 8em;
+            align-self: center;
+        }
+        h2{
+            font-size: 0.8em;
+            font-weight: 700;
+            color: $textcolor;
+        }
+        p{
+            color: $textcolor1;
+            font-size: 0.7em;
+        }
+    }
+}
+
+
+.phone{
+    @media (max-width:1100px) {
+        font-size: 0.8rem;
+    }
+    @media (max-width:850px) {
+        font-size: 0.7rem;
+    }
+    
+    h1{
+        font-size: 1.6em;
+        font-weight: 700;
+        color: $textcolor;
+        text-align: center;
+        margin-bottom: 2.5em;
+    }
+    .telefon{
+        display: flex;
+        justify-content: space-between;
+        gap: 2em;
+        @media (max-width:770px) {
+            flex-direction: column;
+            font-size: 1rem;
+            align-items: center;
+        }
+        @media (max-width:350px) {
+            font-size: 0.7rem;
+        }
+    }
+    .skreen{
+        width: 9.5em;
+        height: 19em;
+        background-color: $skreen;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        position: relative;
+        margin-right: 4em;
+        max-width: 25%;
+        @media (max-width:770px) {
+            max-width: 100%;
+        }
+        h2{
+            font-size: 0.7em;
+            font-weight: 400;
+            color: $vrwhite;
+            letter-spacing: 5px;
+        }
+        .abs{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            padding: 1em;
+            background-color: $vrwhite;
+            background: linear-gradient(326.06deg, #F0EBFF 11.53%, #FFFFFF 74.32%);
+            box-shadow: 0px 13.5277px 39.7872px rgba(187, 166, 255, 0.78);
+            border-radius: 11.9362px;
+            position: absolute;
+            top: -1.5em;
+            right: -3em;
+            h3{
+                font-size: 0.6em;
+                font-weight: 400;
+                color: $black;
+            }
+
+            button{
+                font-size: 0.6em;
+            }
+
+        }
+    }
+
+    .text1{
+        width: 22em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        max-width: 35%;
+        @media (max-width:770px) {
+            max-width: 100%;
+            width: 15em;
+        }
+        h3{
+            font-size: 0.8em;
+            font-weight: 700;
+            color: $skreen;
+            letter-spacing: 5px;
+        }
+        p{
+            font-size: 0.8em;
+            font-weight: 400;
+            color: $textcolor1;
+        }
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2em;
+        width: 15em;
+        padding-top: 2em;
+        max-width: 30%;
+        @media (max-width:770px) {
+            max-width: 100%;
+            width: 15em;
+        }
+        li{
+            display: flex;
+            gap: 0.6em;
+            h4{
+                font-size: 0.7em;
+                font-weight: 400;
+                color: $textcolor1;
+            }
+        }
+    }
+}
+
+.five_cards{
+    display: flex;
+    gap: 1em;
+    transform: translateY(-3em);
+    justify-content: space-between;
+    @media (max-width:1200px) {
+        font-size: 0.8rem;
+    }
+    @media (max-width:1000px) {
+        font-size: 0.7rem;
+    }
+    @media (max-width:1000px) {
+        flex-wrap: wrap;
+        font-size: 1rem;
+        justify-content: center;
+        width: 25em;
+        max-width: 100%;
+        margin: 0 auto;
+        transform: translateY(0);
+        margin-top: 2em;
+    }
+    
+    .card{
+        background-color: $vrwhite;
+        background: linear-gradient(236.29deg, #FFFFFF 29.99%, #F4F9FF 79.17%);
+        box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+        border-radius: 20px;
+        width: 12em;
+        padding: 1.6em;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8em;
+        img{
+            width: 3em;
+        }
+        h1{
+            font-size: 0.8em;
+            font-weight: 400;
+        }
+        p{
+            font-size: 0.7em;
+            font-weight: 400;
+            color: $textcolor1;
+        }
+    }
+    .card1 img{
+        width: 2em;
+    }
+}

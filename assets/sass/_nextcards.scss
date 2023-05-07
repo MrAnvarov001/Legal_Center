@@ -1,0 +1,302 @@
+@import './varible';
+
+.partner{
+    padding: 4em 0 7em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    @media (max-width:900px) {
+        font-size: 0.8rem;
+    }
+    .card{
+        background-color: $vrwhite;
+        border-radius: 1em;
+        padding: 2.5em 5em;
+        display: flex;
+        justify-content: center;
+        gap: 1.6em;
+        @media (max-width:900px) {
+            padding: 3em 1.5em;
+        }
+        @media (max-width:500px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .image{
+            width: 11em;
+            max-width: 30%;
+            display: flex;
+            align-items: center;
+            @media (max-width:500px) {
+                max-width: 100%;
+            }
+            img{
+                width: 100%;
+            }
+        }
+
+        .text{
+            width: 26em;
+            max-width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8em;
+            @media (max-width:500px) {
+                max-width: 100%;
+            }
+            h1{
+                font-size: 0.8em;
+                font-weight: 400;
+                color: $textcolor1;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 0.8em;
+                li{
+                    font-size: 0.7em;
+                    font-weight: 400;
+                    color: $bordercolor;
+                    span{
+                        color: $textcolor1;
+                    }
+                    ul{
+                        list-style: disc;
+                        padding-left: 2em;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.5em;
+                        li{
+                            font-size: 1em;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+.ready_easy{
+    h1{
+        font-size: 1.6em;
+        font-weight: 700;
+        color: $textcolor;
+        text-align: center;
+        margin-bottom: 2.5em;
+    }
+    @media (max-width:350px) {
+        font-size: 0.8rem;
+    }
+    .four_card{
+        display: flex;
+        gap: 0.8em;
+        flex-wrap: wrap;
+        @media (max-width:1080px) {
+            justify-content: center;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 0.8em;
+            flex-wrap: wrap;
+            max-width: 100%;
+            @media (max-width:1080px) {
+                flex-direction: row;
+            }
+            @media (max-width:685px) {
+                justify-content: center;
+            }
+            li{
+                background: $vrwhite;
+                box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+                border-radius: 20px;
+                width: 15em;
+                max-width: 100%;
+                padding: 1.6em;
+                display: flex;
+                flex-direction: column;
+                gap: 0.8em;
+                
+                .circle{
+                    width: 2em;
+                    height: 2em;
+                    border-radius: 50%;
+                    border: 2px solid $textcolor1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    h2{
+                        font-size: 0.7em;
+                        font-weight: 700;
+                        color: $textcolor1;
+                    }
+                }
+                h3{
+                    font-size: 0.8em;
+                    font-weight: 400;
+                    color: $textcolor1;
+                }
+                p{
+                    font-size: 0.7em;
+                    font-weight: 400;
+                    color: $textcolor1;
+                }
+            }
+        }
+    
+        .long_and_short{
+            display: flex;
+            gap: 0.8em;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            max-width: 100%;
+            @media (max-width:685px) {
+                justify-content: center;
+            }
+            .long{
+                background: $vrwhite;
+                box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+                border-radius: 20px;
+                width: 16em;
+                max-width: 100%;
+                padding: 2em;
+                display: flex;
+                flex-direction: column;
+                gap: 0.8em;
+                @media (max-width:1080px) {
+                    width: 15em;
+                    padding: 1.6em;
+                }
+                img{
+                    padding-bottom: 1em;
+                }
+                .circle{
+                    width: 2em;
+                    height: 2em;
+                    border-radius: 50%;
+                    border: 2px solid $textcolor1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    h2{
+                        font-size: 0.7em;
+                        font-weight: 700;
+                        color: $textcolor1;
+                    }
+                }
+                h3{
+                    font-size: 0.8em;
+                    font-weight: 400;
+                    color: $textcolor1;
+                }
+                p{
+                    font-size: 0.7em;
+                    font-weight: 400;
+                    color: $textcolor1;
+                }
+            }
+
+            .short{
+                background: $vrwhite;
+                box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+                border-radius: 20px;
+                width: 16em;
+                max-width: 100%;
+                padding: 2em;
+                display: flex;
+                flex-direction: column;
+                gap: 0.8em;
+                @media (max-width:1080px) {
+                    width: 15em;
+                    padding: 1.6em;
+                }
+                img{
+                    width: 2.75em;
+                }
+                h3{
+                    font-size: 0.8em;
+                    font-weight: 400;
+                    color: $textcolor1;
+                }
+                p{
+                    font-size: 0.7em;
+                    font-weight: 400;
+                    color: $textcolor1;
+                }
+            }
+        }
+    }
+}
+
+.number{
+    background-color: $blue;
+    color: $vrwhite;
+    margin: 7em 0;
+    padding: 5em 0;
+    @media (max-width:700px) {
+        font-size: 0.8rem;
+    }
+    .cnt{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 2em;
+        @media (max-width:1111px) {
+            justify-content: center;
+        }
+        @media (max-width:550px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        h1{
+            font-size: 1.6em;
+            font-weight: 700;
+            width: 13em;
+            max-width: 100%;
+            @media (max-width:550px) {
+                font-size: 1.2em;
+                text-align: center;
+            }
+        }
+
+        .uls{
+            display: flex;
+            gap: 0.8em;
+            @media (max-width:550px) {
+                flex-direction: column;
+                
+            }
+            ul{
+                display: flex;
+                gap: 0.8em;
+                
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.8em;
+                    align-items: center;
+                    @media (max-width:550px) {
+                        width: 50%;
+                    }
+                    h2{
+                        background: linear-gradient(90deg, #4614E8 11.01%, #BCA7FF 78.81%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-size: 1.6em;
+                        font-weight: 700;
+                    }
+                    h3{
+                        font-size: 0.6em;
+                        font-weight: 400;
+                        color: $vrwhite;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

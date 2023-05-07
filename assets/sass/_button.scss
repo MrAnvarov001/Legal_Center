@@ -1,0 +1,21 @@
+@import './varible';
+
+.btn_style1{
+    font-size: 0.8em;
+    font-weight: 700;
+    color: $vrwhite;
+    padding: 0.8em 1.8em;
+    background-color: $blue;
+    border-radius: 0.75em;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        background-color: $btnhover;
+    }
+}
+
+p{
+    font-size: 14px;
+    font-weight: 400;
+    color: $textcolor;
+}

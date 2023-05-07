@@ -1,0 +1,183 @@
+@import './varible';
+
+.mini_logo{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    flex-wrap: wrap;
+    margin: 5em 0 2.5em;
+    row-gap: 6em;
+    @media (max-width:1160px) {
+        justify-content: center;
+    }
+    @media (max-width:550px) {
+        font-size: 0.6rem;
+    }
+    .text{
+        width: 20em;
+        max-width: 100%;
+        img{
+            width: 4em;
+        }
+        h1{
+            font-size: 1.6em;
+            font-weight: 700;
+            color: $textcolor;
+            padding: 32px 0 16px;
+        }
+        p{
+            color: $textcolor1;
+            @media (max-width:550px) {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .four_card{
+        position: relative;
+        width: 30em;
+        max-width: 100%;
+        height: 15em;
+        .small_circle{
+            width: 2em;
+            height: 2em;
+            background: linear-gradient(90deg, #E1D8FF 21.57%, #F4ECFF 100%);
+            border-radius: 50%;
+            position: absolute;
+            top: 49%;
+            left: 13.5%;
+        }
+        .big_circle{
+            width: 8em;
+            height: 8em;
+            background: linear-gradient(90deg, #E1D8FF 21.57%, #F4ECFF 100%);
+            border-radius: 50%;
+            position: absolute;
+            top: -20%;
+            right: 0;
+        }
+        .card{
+            background: linear-gradient(236.29deg, #FFFFFF 29.99%, #F4F9FF 79.17%);
+            box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            h2{
+                font-weight: 700;
+                background: linear-gradient(to bottom, #4614E8, #BCA7FF);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .card1{
+            width: 11em;
+            padding: 1.6em;
+            position: absolute;
+            top: 45%;
+            left: 47%;
+            transform: translate(-100%, -100%);
+            @media (max-width:550px) {
+                top: 48%;
+                left: 48.5%;
+            }
+            h2{
+                font-size: 40px;
+                @media (max-width:550px) {
+                    font-size: 25px;
+                }
+                span{
+                    font-size: 16px;
+                    @media (max-width:550px) {
+                        font-size: 10px;
+                    }
+                }
+            }
+            p{
+                color: $textcolor1;
+                font-size: 14px;
+                @media (max-width:550px) {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .card2{
+            position: absolute;
+            top: 45%;
+            left: 53%;
+            transform: translateY(-100%);
+            width: 9em;
+            padding: 1.2em;
+            @media (max-width:550px) {
+                top: 48%;
+                left: 51.5%;
+            }
+            h2{
+                font-size: 36px;
+                @media (max-width:550px) {
+                    font-size: 25px;
+                }
+                span{
+                    font-size: 16px;
+                    @media (max-width:550px) {
+                        font-size: 10px;
+                    }
+                }
+            }
+            p{
+                @media (max-width:550px) {
+                    font-size: 10px;
+                }
+            }
+
+        }
+
+        .card3{
+            width: 9em;
+            padding: 1.2em;
+            position: absolute;
+            top: 55%;
+            left: 47%;
+            transform: translateX(-100%);
+            @media (max-width:550px) {
+                top: 52%;
+                left: 48.5%;
+            }
+            h2{
+                font-size: 36px;
+                @media (max-width:550px) {
+                    font-size: 25px;
+                }
+            }
+            p{
+                @media (max-width:550px) {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .card4{
+            width: 11em;
+            padding: 1.6em;
+            position: absolute;
+            top: 55%;
+            left: 53%;
+            @media (max-width:550px) {
+                top: 52%;
+                left: 51.5%;
+            }
+            h2{
+                font-size: 16px;
+                @media (max-width:550px) {
+                    font-size: 10px;
+                }
+            }
+            p{
+                @media (max-width:550px) {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
